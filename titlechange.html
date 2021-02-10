@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>simple</title>
+    </head>
+    <body>
+        <input type="text" id="txt" placeholder="Enter the title" onclick="this.value = ''"/>
+        <button onclick=" getAndSetVal();">Change Title</button>
+      
+        <script>
+            function getVal()
+            {
+                var txt = document.getElementById('')[0].value ;
+            }
+            function getAndSetVal()
+            {
+                var txt1 = document.getElementById('txt').value;
+              document.title =  document.getElementById('txt').value = txt1;
+               
+            }
+            
+            </script>
+
+</body>
+</html>
+
+
+    

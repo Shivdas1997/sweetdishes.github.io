@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"> 
+    <title> </title>
+    
+</head>
+<body >
+  <input type="button"  value = " शीर्षक बदला" id="button1" ></input>
+  
+  
+  <div class="Tc-modal" >
+       
+    <div class="modal-content">
+      
+        <div class="close">x</div>
+        <h2> Do you want to change the title of webpage?</h2>
+        <div class="popup">
+          <p class="text"></p>
+        <input type="text" id="txt" placeholder="Enter the title" onclick="this.value = ''"/>
+        <button onclick=" getAndSetVal();">Change Title</button>
+        </div>
+        </div>
+        </div> 
+        <script>
+        
+        
+         document.getElementById('button1').addEventListener('click',
+         function()
+         {
+           document.querySelector('.Tc-modal').style.display= 'flex';
+         });
+         
+         document.querySelector('.close').addEventListener('click',
+         function ()
+         {
+           document.querySelector('.Tc-modal').style.display= 'none';
+         });
+        
+
+          function getVal()
+                      {
+                          var txt = document.getElementById('')[0].value ;
+                          
+                      }
+                      
+                      function getAndSetVal()
+                      {
+                          var txt1 = document.getElementById('txt').value;
+                        document.title =  document.getElementById('txt').value = txt1;
+                      
+                        localStorage.getItem('save');
+                        var save = document.title =  document.getElementById('txt').value = txt1;
+                        localStorage.setItem('title',save);
+                        var data = localStorage.getItem('title');
+                        localStorage.removeItem('title');
+                        
+                     
+                        
+                      }
+                     
+
+
+
+                         
+                      
+                      
+
+
+
+                    
+                        
+                       
+
+          </script>
+  <div class="main">
+
+    
+      <div class="navbar">
+          <div class="banner">
+          <img src ="logo1.jpg"> </img>
+             </div>
+             
+
+          <ul>
+              <li><a href="index.html">मुख्यपृष्ठ</a></li>
+                
+              <li><a href="recipe.html">रेसिपी</a></li>
+              <li><a href="about.html">श्रीखंड बद्दल</a></li>
+              </ul>
+             
+         </div>
+            <div class="image">
+              <div class="left-column">
+                  
+                <h2> श्री<span>खंड</span></h2>
+                  <h3>आपले हृदय <span>नेहमी आनंदाने भरते</span></h3>
+                <p>
+                    
+                  श्रीखंड कॅल्शियम, फॉस्फरस, व्हिटॅमिन बी 1, बी 2 आणि बी 12 चे समृद्ध स्रोत आहे. <br>
+                  भेसळ टाळण्यासाठी घरी बनवून त्यातील अनेक आरोग्याचा फायदा घ्या.<br>
+                  आणि त्यात कोरडे फळे घालणे
+
+                </p>
+                  
+              </div>
+                <div class="right-column">
+                    <img src="cover.jpg">
+                </div>
+                
+              </div>
+
+            </div>
+          
+      </body>
+      </html>
+      
+
+  
